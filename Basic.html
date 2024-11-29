@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Learning Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            padding: 20px;
+            color: white;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .sidebar nav a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #34495e;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar nav a:hover {
+            background-color: #3498db;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f4f4f4;
+        }
+
+        .content section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+        }
+
+        .learning-path {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .path-column {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Web Dev Learning Path</h2>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#html-basics">HTML Basics</a>
+            <a href="#css-fundamentals">CSS Fundamentals</a>
+            <a href="#javascript-core">JavaScript Core</a>
+            <a href="#learning-resources">Learning Resources</a>
+            <a href="#project-roadmap">Project Roadmap</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <section id="introduction">
+            <h1>Web Development Learning Guide</h1>
+            <p>A comprehensive roadmap to master HTML, CSS, and JavaScript - the three core technologies of web development. This guide will help you transform from a beginner to a proficient web developer.</p>
+        </section>
+
+        <section id="html-basics">
+            <h2>HTML Fundamentals</h2>
+            <p>HTML (HyperText Markup Language) is the skeleton of web pages. Learn these key concepts:</p>
+            <pre><code>&lt;!-- Basic HTML Structure --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to Web Development&lt;/h1&gt;
+        &lt;p&gt;Learning HTML is the first step!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <ul>
+                <li>Document structure</li>
+                <li>Common tags (headings, paragraphs, links)</li>
+                <li>Forms and input elements</li>
+                <li>Semantic HTML5 tags</li>
+            </ul>
+        </section>
+
+        <section id="css-fundamentals">
+            <h2>CSS Styling Essentials</h2>
+            <p>CSS controls the presentation and layout of web pages:</p>
+            <pre><code>/* CSS Selectors and Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#main-header {
+    color: #333;
+    text-align: center;
+}</code></pre>
+            <ul>
+                <li>Selectors and specificity</li>
+                <li>Box model</li>
+                <li>Flexbox and Grid layouts</li>
+                <li>Responsive design techniques</li>
+            </ul>
+        </section>
+
+        <section id="javascript-core">
+            <h2>JavaScript Fundamentals</h2>
+            <p>JavaScript adds interactivity to web pages:</p>
+            <pre><code>// JavaScript Basics
+function calculateSum(a, b) {
+    return a + b;
+}
+
+const button = document.querySelector('#myButton');
+button.addEventListener('click', () => {
+    alert('Button was clicked!');
+});</code></pre>
+            <ul>
+                <li>Variables and data types</li>
+                <li>Functions and scope</li>
+                <li>DOM manipulation</li>
+                <li>Event handling</li>
+                <li>Asynchronous programming</li>
+            </ul>
+        </section>
+
+        <section id="learning-resources">
+            <h2>Recommended Learning Resources</h2>
+            <div class="learning-path">
+                <div class="path-column">
+                    <h3>Free Resources</h3>
+                    <ul>
+                        <li>MDN Web Docs</li>
+                        <li>freeCodeCamp</li>
+                        <li>W3Schools</li>
+                    </ul>
+                </div>
+                <div class="path-column">
+                    <h3>Online Courses</h3>
+                    <ul>
+                        <li>Udemy Web Dev Courses</li>
+                        <li>Coursera Web Development</li>
+                        <li>edX Programming Courses</li>
+                    </ul>
+                </div>
+                <div class="path-column">
+                    <h3>Practice Platforms</h3>
+                    <ul>
+                        <li>CodePen</li>
+                        <li>LeetCode</li>
+                        <li>HackerRank</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-roadmap">
+            <h2>Learning Progression Roadmap</h2>
+            <ol>
+                <li>Learn HTML Structure</li>
+                <li>Master CSS Styling</li>
+                <li>JavaScript Fundamentals</li>
+                <li>Build Simple Projects</li>
+                <li>Advanced Frameworks (React, Vue)</li>
+                <li>Backend Integration</li>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
